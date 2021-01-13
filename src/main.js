@@ -3,8 +3,14 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 
+// 加载全局样式文件
+import './style/index.less'
+
 Vue.config.productionTip = false
 
+// 创建Vue根实例
+// 把router配置到根实例中
+// 通过render方法把App根组件渲染到 #app 入口节点
 new Vue({
   router,
   store,
